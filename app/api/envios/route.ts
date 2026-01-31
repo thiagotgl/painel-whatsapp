@@ -1,5 +1,8 @@
+export const runtime = "nodejs";
 import { NextRequest, NextResponse } from "next/server";
 import { getDb } from "@/lib/db";
+
+
 
 // normaliza telefone recebido via query
 function normalizarTelefone(valor: string | null) {
