@@ -99,10 +99,9 @@ export default function Home() {
     if (status) params.append("status", status);
 
     const res = await fetch(`/api/envios?${params.toString()}`, {
-      headers: {
-        Authorization: "8ef9e6c6-d7df-4d54-9916-b761f5967894",
-      },
-    });
+     headers: {
+  Authorization: "Bearer c8b7e9b2-6c3a-4c2d-b1c7-9a8d4f5a2e11-91f2a6d3e7c4b8",
+},
 
     const json = await res.json();
     setDados(json.dados || []);
