@@ -100,7 +100,7 @@ export default function Home() {
 
     const res = await fetch(`/api/envios?${params.toString()}`, {
       headers: {
-        Authorization: "Bearer token_simples_para_teste",
+        Authorization: "8ef9e6c6-d7df-4d54-9916-b761f5967894",
       },
     });
 
